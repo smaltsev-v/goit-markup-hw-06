@@ -388,30 +388,52 @@
                         </svg>
                     </button>
                     <h4 class="from-titel">Оставьте свои данные, мы вам перезвоним</h4>
-                    <div class="from-field">
-                        <label for="name" class="from-label">Имя</label>
-                        <input class="form-input" type="text" name="Имя" id="name"  />
-                    </div>
-                    <div class="from-field">
-                        <label for="tel" class="from-label">Телефон</label> 
-                        <input class="form-input" type="tel" name="Телефон" id="tel" />
-                    </div>
-                    <div class="from-field">
-                        <label for="mail" class="from-label">Почта</label>
-                        <input class="form-input" type="email" name="почта" id="mail" />
-                    </div>
-                    <div class="from-field">
-                        <label for="Comment" class="from-label">Комментарий</label>
-                        <textarea class="Comment" name="Comment" id="Comment"  rows="10" placeholder="Введите текст"></textarea>
-                    </div>
-                    <div class="from-field"> 
-                           
-                        <input class="form-input" type="checkbox" name="agreement" id="agreement"/>
-                        <label for="agreement" class="from-label">Соглашаюсь с рассылкой и принимаю Условия договора</label>
-                    </div>
+                    <label class="from-field">
+                        <span class="from-label">Имя</span>
+                        <input type="text" class="form-input" name="Имя" placeholder=" "  />
+                        <svg class="modal-icon" width="18" height="18">
+                            <use href="./images/icon/icon.svg#icon-person"></use>
+                        </svg>
+                    </label>
+                    <label class="from-field">
+                        <span class="from-label">Телефон</span> 
+                        <input type="tel" class="form-input" name="tel"  />
+                        <svg class="modal-icon" width="18" height="18">
+                            <use href="./images/icon/icon.svg#icon-phonemodal"></use>
+                        </svg>
+                    </label>
+                    <label class="from-field">
+                        <span  class="from-label">Почта</span>
+                        <input type="email"  class="form-input" name="mail"  />
+                        <svg class="modal-icon" width="18" height="18">
+                            <use href="./images/icon/icon.svg#icon-emailmodal"></use>
+                        </svg>
+                    </label>
+                    <label class="from-field">
+                        <span  class="from-label">Комментарий</span>
+                        <textarea class="Comment" name="Comment"   rows="10" placeholder="Введите текст"></textarea>
+                    </label>
+                    <label class="from-field  label">                            
+                        <input type="checkbox" class="checkbox_input" name="agreement" />
+                        <span class="checkbox-icon"></span>
+                        <span class="from-label">Соглашаюсь с рассылкой и принимаю <a class="contract" href="#">Условия договора</a> </span>
+                    </label>
                     <button type="submit" class="button-send">Отправить</button>                   
                 </form>
             </form>
         <script src="./js/modal.js"></script>
      </body>       
-</html>
+</html> 
+
+
+
+
+
+<!-- 
+<svg
+    class="checkbox-icon"
+    width="11"
+    height="8"
+>
+    <use href="./images/icon/icon.svg#icon-iconcheck"></use>
+</svg> -->
