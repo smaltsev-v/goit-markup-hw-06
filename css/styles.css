@@ -538,6 +538,10 @@ img {
   line-height: 24px;
   letter-spacing: 0.03em;
 }
+.sub-input {
+  display: flex;
+  flex-direction: column;
+}
 /* portfolio */
 
 .hidden-header {
@@ -724,29 +728,27 @@ img {
   pointer-events: none;
 }
 .modal-button {
-  position: relative;
-  top: -32px;
-  left: 450px;
+  position: absolute;
+  top: 8px;
+  left: 492px;
   border-radius: 50%;
   padding: 6px;
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #fff;
-  /* transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-button:hover {
+.modal-button:hover,
+.modal-button:focus {
   fill: var(--accent-color);
 }
 /* modal стилизация */
 .form {
-  display: block;
-Ф
-  width: 538px;
-  justify-content: center;
+  width: 528px;
 
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   margin-left: auto;
   margin-right: auto;
   padding: 40px;
@@ -786,15 +788,7 @@ img {
   color: var(--title-text-color);
   margin-bottom: 12px;
 }
-/* .from-field input[type='checkbox'] {
-  width: 16px;
-  height: 16px;
-  margin-bottom: 30px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  position: absolute;
-} */
+
 .from-field input[type='text'] {
   padding-left: 42px;
 }
@@ -847,14 +841,16 @@ img {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-
+  color: var(--accent-color);
+  ransition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contract:hover,
+.contract:focus {
   color: var(--accent-color);
 }
 .checkbox_input {
-  /* -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  position: absolute; */
   position: absolute;
   width: 1px;
   height: 1px;
@@ -907,6 +903,16 @@ img {
   font-weight: bold;
   text-align: center;
 }
+
 .button-send {
-  /* display: flex; */
+  margin-left: 123px;
+  margin-top: 12px;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-send:focus,
+.button-send:hover {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
