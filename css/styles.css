@@ -540,8 +540,30 @@ img {
 }
 .sub-input {
   display: flex;
-  flex-direction: column;
 }
+.Subscribe {
+  margin-left: 93px;
+}
+
+.title-sub {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  justify-self: start;
+}
+.input-sub {
+  width: 358px;
+  height: 50px;
+  background-color: var(--background-color-secondary);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
 /* portfolio */
 
 .hidden-header {
