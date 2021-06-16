@@ -378,20 +378,18 @@
                             </li>
                         </ul>
                     </div>
-                    <form class="Subscribe  f-section">
-                        <label class="sub-input">
-                            <span class="title-sub">Подпишитесь на рассылку</span>
-                            <input type="" class="input-sub"  name="sub-mail" placeholder="E-mail">
-                            <button type="submit" class="but-sub">
+                    <form class="Subscribe ">
+                        <label for="input-sub" class="title-sub">Подпишитесь на рассылку</label>
+                        <div class="sub-wrap">
+                            <input id="input-sub" type="email" class="input-sub"  name="sub-mail" placeholder="E-mail">
+                            <button type="submit" class="but-sub"> Подписаться
                                 <svg class="sub-icon" width="24" height="24">
                                     <use href="./images/icon/icon.svg#icon-iconsend"></use>
-                                </svg>  
+                                </svg>                           
                             </button>
-                            </div>
-                        </label>
+                        </div>                        
                     </form>
-                </div>
-                
+                </div>                
             </footer>
             <div class=" backdrop is-hidden" data-modal>
                 <form class="form modal">            
@@ -433,20 +431,7 @@
                     </label>
                     <button type="submit" class="button-send">Отправить</button>                   
                 </form>
-            </form>
+            </div>
         <script src="./js/modal.js"></script>
      </body>       
 </html> 
-
-
-
-
-
-<!-- 
-<svg
-    class="checkbox-icon"
-    width="11"
-    height="8"
->
-    <use href="./images/icon/icon.svg#icon-iconcheck"></use>
-</svg> -->
